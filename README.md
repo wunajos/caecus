@@ -3,7 +3,7 @@
 ![politico](https://i.imgur.com/NyXeNzp.jpg)
 
 ### O que é?
-Caecus é uma aplicação que agrega informações sobre os deputados estaduais de São Paulo: projetos de leis apresentados, leis aprovadas, presenças em sessões, andamento de comissões, gastos, salários e mais.
+Caecus é uma aplicação que agrega informações sobre os deputados estaduais de São Paulo: proposições apresentadas, leis aprovadas, presenças em sessões, andamento de comissões, lista de funcionários, gastos, salários e mais.
 
 ### Como funciona?
 Os dados apresentados no Caecus são disponibilizados pela Assembleia Legislativa do Estado de São Paulo por meio de uma API. Ou seja, atualização das informações é feita automaticamente, de acordo com a frequência da Alesp.
