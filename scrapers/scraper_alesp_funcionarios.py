@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Crawler de funcionários da Assembleia Legislativa do Estado de São Paulo
+Scraper de lotação de funcionários da Assembleia Legislativa do Estado de São Paulo
 Criado em 2 de janeiro de 2018, às 22:06:26
 @author: rodolfoviana
 """
@@ -17,40 +17,33 @@ def getvalueofnode(node):
 
 
 parsed_xml = et.parse(req)
-dfcols = ['data_inicio', 'data_fim', 'id_cargo',
-          'cargo', 'nome', 'id_regime', 'regime']
+dfcols = ['data_inicio', 'data_fim', 'nome', 'id_ua', 'ua']
 
 df_xml = pd.DataFrame(columns=dfcols)
 
 for node in parsed_xml.getroot():
     data_inicio = node.find('DataInicio')
     data_fim = node.find('DataFim')
-    id_cargo = node.find('IdCargo')
-    cargo = node.find('NomeCargo')
     nome = node.find('NomeFuncionario')
-    id_regime = node.find('IdRegime')
-    regime = node.find('NomeRegime')
+    id_ua = node.find('IdUA')
+    ua = node.find('NomeUA')
 
     df_xml = df_xml.append(
             pd.Series([getvalueofnode(data_inicio),
                        getvalueofnode(data_fim),
-                       getvalueofnode(id_cargo),
-                       getvalueofnode(cargo),
                        getvalueofnode(nome),
-                       getvalueofnode(id_regime),
-                       getvalueofnode(regime)], index=dfcols),
+                       getvalueofnode(id_ua),
+                       getvalueofnode(ua)], index=dfcols),
             ignore_index=True)
 
 #   print(df_xml)
 
-df_xml.to_csv('resultado.csv', sep=';', encoding='utf8')
+df_xml.to_csv('lotacao_funcionarios.csv', sep=';')
 
-# ESTRUTURA DO XML
-# <CargoFuncionario> Raiz
-#       <DataInicio> Data início do cargo do funcionário - date
-#       <DataFim> Data fim do cargo do funcionário - date
-#       <IdCargo> Identificador único do cargo - integer
-#       <NomeCargo> Nome do cargo - string
-#       <NomeFuncionario> Nome do Funcionário - string
-#       <IdRegime> Identificador único do regime da lotação/cargo - integer
-#       <NomeRegime> Nome do regime da lotação/cargo - string
+#<LotacaoFuncionario>
+#    <DataFim>2008-08-28T00:00:00-03:00</DataFim>
+#    <DataInicio>2007-03-27T00:00:00-03:00</DataInicio>
+#    <IdUA>20447</IdUA>
+#    <NomeFuncionario>ABDALLAH ABRÃO AUAD</NomeFuncionario>
+#    <NomeUA>Gabinete do Deputado FERNANDO CAPEZ</NomeUA>
+#</LotacaoFuncionario>
