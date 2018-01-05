@@ -25,12 +25,12 @@ df_xml = pd.DataFrame(columns=dfcols)
 for node in parsed_xml.getroot():
     deputado = node.find('Deputado')
     matricula = node.find('Matricula')
-    ano = node.find('Ano')
     mes = node.find('Mes')
     tipo = node.find('Tipo')
     cnpj = node.find('CNPJ')
     fornecedor = node.find('Fornecedor')
     valor = node.find('Valor')
+    ano = node.find('Ano')
 
     df_xml = df_xml.append(
             pd.Series([getvalueofnode(deputado),
