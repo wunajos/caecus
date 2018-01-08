@@ -11,6 +11,12 @@ import csv
 tree = ET.parse('despesas_gabinetes.xml')
 root = tree.getroot()
 
+def get_node_text(tree, q):
+    node = tree.find(q)
+    if node is None:
+        return ""
+    return node.text
+
 with open('resultado.csv', 'w', encoding='utf-8') as despesas:
     csvwriter = csv.writer(despesas, delimiter=';')
     cabecalhos = []
@@ -37,21 +43,21 @@ with open('resultado.csv', 'w', encoding='utf-8') as despesas:
 		    csvwriter.writerow(cabecalhos)
 		    count += 1
 
-	    deputado = i.find('Deputado').text
+	    deputado = get_node_text(i, 'Deputado')
 	    dep.append(deputado)
-	    matricula = i.find('Matricula').text
+	    matricula = get_node_text(i, 'Matricula')
 	    dep.append(matricula)
-	    ano = i.find('Ano').text
+	    ano = get_node_text(i, 'Ano')
 	    dep.append(ano)
-	    mes = i.find('Mes').text
+	    mes = get_node_text(i, 'Mes')
 	    dep.append(mes)
-	    tipo = i.find('Tipo').text
+	    tipo = get_node_text(i, 'Tipo')
 	    dep.append(tipo)
-	    cnpj = i.find('CNPJ').text if i.find('CNPJ') else None
+	    cnpj = get_node_text(i, 'CNPJ')
 	    dep.append(cnpj)
-	    fornecedor = i.find('Fornecedor').text
+	    fornecedor = get_node_text(i, 'Fornecedor')
 	    dep.append(fornecedor)
-	    valor = i.find('Valor').text
+	    valor = get_node_text(i, 'Valor')
 	    dep.append(valor)
 	    csvwriter.writerow(dep)
 despesas.close()
