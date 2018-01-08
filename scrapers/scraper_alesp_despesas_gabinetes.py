@@ -5,55 +5,55 @@ Criado em 3 de janeiro de 2018, às 23:05:26
 @author: rodolfoviana
 """
 
-import urllib.request
-import xml.etree.cElementTree as et
-import pandas as pd
+import xml.etree.cElementTree as ET
+import csv
 
-req = urllib.request.urlopen('https://www.al.sp.gov.br/repositorioDados/deputados/despesas_gabinetes.xml')
+tree = ET.parse('despesas_gabinetes.xml')
+root = tree.getroot()
 
+despesas = open('despesas.csv', 'w')
 
-def getvalueofnode(node):
-    return node.text if node is not None else None
+csvwriter = csv.writer(despesas)
+cabecalhos = []
 
+count = 0
+for i in root.findall('despesa'):
+	dep = []
+	if count == 0:
+		deputado = i.find('Deputado').tag
+		cabecalhos.append(deputado)
+		matricula = i.find('Matricula').tag
+		cabecalhos.append(matricula)
+		ano = i.find('Ano').tag
+		cabecalhos.append(ano)
+		mes = i.find('Mes').tag
+		cabecalhos.append(mes)
+		tipo = i.find('Tipo').tag
+		cabecalhos.append(tipo)
+		cnpj = i.find('CNPJ').tag
+		cabecalhos.append(cnpj)
+		fornecedor = i.find('Fornecedor').tag
+		cabecalhos.append(fornecedor)
+		valor = i.find('Valor').tag
+		cabecalhos.append(valor)
+		csvwriter.writerow(cabecalhos)
+		count += 1
 
-parsed_xml = et.parse(req)
-dfcols = ['deputado', 'matricula', 'ano', 'mes',
-          'tipo', 'cnpj', 'fornecedor', 'valor']
-
-df_xml = pd.DataFrame(columns=dfcols)
-
-for node in parsed_xml.getroot():
-    deputado = node.find('Deputado')
-    matricula = node.find('Matricula')
-    mes = node.find('Mes')
-    tipo = node.find('Tipo')
-    cnpj = node.find('CNPJ')
-    fornecedor = node.find('Fornecedor')
-    valor = node.find('Valor')
-    ano = node.find('Ano')
-
-    df_xml = df_xml.append(
-            pd.Series([getvalueofnode(deputado),
-                       getvalueofnode(matricula),
-                       getvalueofnode(ano),
-                       getvalueofnode(mes),
-                       getvalueofnode(tipo),
-                       getvalueofnode(cnpj),
-                       getvalueofnode(fornecedor),
-                       getvalueofnode(valor)], index=dfcols),
-            ignore_index=True)
-
-#   print(df_xml)
-
-df_xml.to_csv('despesas.csv', sep=';')
-
-# ESTRUTURA DO XML
-# <despesa> Raiz
-#   <Deputado> Nome do Deputado Estadual
-#   <Matricula> Número da matrícula do Deputado
-#   <Ano> Ano a que se refere a despesa do gabinete
-#   <Mes> Mês a que se refere a despesa do gabinete
-#   <Tipo>Descrição do tipo da despesa
-#   <CNPJ> CNPJ ou CPF do favorecido
-#   <Fornecedor> Nome do fornecedor/favorecido
-#   <Valor> Valor da despesa
+	deputado = i.find('Deputado').text
+	dep.append(deputado)
+	matricula = i.find('Matricula').text
+	dep.append(matricula)
+	ano = i.find('Ano').text
+	dep.append(ano)
+	mes = i.find('Mes').text
+	dep.append(mes)
+	tipo = i.find('Tipo').text
+	dep.append(tipo)
+	cnpj = i.find('CNPJ').text if i.find('CNPJ') else None
+	dep.append(cnpj)
+	fornecedor = i.find('Fornecedor').text
+	dep.append(fornecedor)
+	valor = i.find('Valor').text
+	dep.append(valor)
+	csvwriter.writerow(dep)
+despesas.close()
