@@ -36,14 +36,4 @@ for node in parsed_xml.getroot():
                        getvalueofnode(ua)], index=dfcols),
             ignore_index=True)
 
-#   print(df_xml)
-
 df_xml.to_csv('lotacao_funcionarios.csv', sep=';')
-
-#<LotacaoFuncionario>
-#    <DataFim>2008-08-28T00:00:00-03:00</DataFim>
-#    <DataInicio>2007-03-27T00:00:00-03:00</DataInicio>
-#    <IdUA>20447</IdUA>
-#    <NomeFuncionario>ABDALLAH ABRÃO AUAD</NomeFuncionario>
-#    <NomeUA>Gabinete do Deputado FERNANDO CAPEZ</NomeUA>
-#</LotacaoFuncionario>
