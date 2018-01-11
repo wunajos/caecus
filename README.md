@@ -4,9 +4,11 @@
 Caecus é (ou pretende ser) uma coleção de scripts relacionados aos deputados estaduais de São Paulo: proposições apresentadas, leis aprovadas, presenças em sessões, andamento de comissões, lista de funcionários, gastos, salários e mais.
 
 ### Como funciona?
-Os dados apresentados no Caecus são disponibilizados pela Assembleia Legislativa do Estado de São Paulo por meio do Portal de Dados Abertos. Ou seja, a atualização das informações é feita automaticamente, de acordo com a frequência da Alesp.
+Os dados apresentados no Caecus são disponibilizados pela Assembleia Legislativa do Estado de São Paulo por meio do [Portal dos Dados Abertos](https://www.al.sp.gov.br/dados-abertos/). Ou seja, a atualização das informações é feita automaticamente, de acordo com a frequência da Alesp.
 
-Por ora, os scripts disponíveis rodam com Python 3.
+Também pretendo incluir dados que não estão no portal, por meio de raspagem do site da Alesp.
+
+Os scripts disponíveis rodam com Python 3.
 
 ### Quais bibliotecas são necessárias para usar os scripts?
 Eu tenho feito testes com algumas bibliotecas, o que significa que a lista muda todos os dias. Já usei lxml, bs4, untangle e outras. Mas, por ora, para os scripts aqui disponíveis, basta instalar pandas e requests.
