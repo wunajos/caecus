@@ -22,5 +22,5 @@ Quando e se a lista de bibliotecas aumentar, crio um arquivo `requirements.txt` 
 ### Por que Caecus?
 "Caecus" significa "cego" em latim. Foi o apelido dado a Ápio Cláudio, político romano que viveu de 340 a.C a 273 a.C. Ele foi responsável por abrir o Senado aos cidadãos dos estratos mais baixos da sociedade, aos comerciantes e aos filhos de ex-escravos. Queria aproximar o povo do poder, e este é o objeto do Caecus. Leia mais sobre Ápio Cláudio na [Wikipédia](https://pt.wikipedia.org/wiki/%C3%81pio_Cl%C3%A1udio_Cego).
 
-### Tem sugestões, correções, dicas?
+### Tem sugestões ou correções, ou quer colaborar de alguma forma?
 Você pode abrir uma [issue](https://github.com/rodolfo-viana/caecus/issues), clonar o repositório e mandar um [pull request](https://github.com/rodolfo-viana/caecus/pulls) ou enviar um e-mail para rodolfo arroba rodolfoviana ponto com ponto br.
