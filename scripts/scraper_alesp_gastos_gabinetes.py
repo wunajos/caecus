@@ -8,7 +8,6 @@ Criado em 8 de janeiro de 2018, às 00:49:56
 from __future__ import print_function
 from xml.sax import ContentHandler, parse
 import requests
-import xml.etree.cElementTree as ET
 import csv
 
 file = requests.get('http://www.al.sp.gov.br/repositorioDados/deputados/despesas_gabinetes.xml')
