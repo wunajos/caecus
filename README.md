@@ -1,5 +1,7 @@
 # Caecus
 
+[![Code Health](https://landscape.io/github/rodolfo-viana/caecus/master/landscape.svg?style=flat)](https://landscape.io/github/rodolfo-viana/caecus/master) 
+
 ### O que é?
 Caecus é (ou pretende ser) uma coleção de scripts relacionados aos deputados estaduais de São Paulo: proposições apresentadas, leis aprovadas, presenças em sessões, andamento de comissões, lista de funcionários, gastos, salários e mais.
 
