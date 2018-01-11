@@ -3,6 +3,7 @@
 Crawler de despesas de gabinetes da Assembleia Legislativa do Estado de São Paulo
 Criado em 8 de janeiro de 2018, às 00:49:56
 @author: rodolfoviana
+Colaboração: Rodolfo Carvalho
 """
 
 from __future__ import print_function
