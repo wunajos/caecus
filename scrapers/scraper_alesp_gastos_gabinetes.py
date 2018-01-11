@@ -1,4 +1,4 @@
-﻿# -*- coding: utf-8 -*-
+# -*- coding: utf-8 -*-
 """
 Crawler de despesas de gabinetes da Assembleia Legislativa do Estado de São Paulo
 Criado em 8 de janeiro de 2018, às 00:49:56
