@@ -13,7 +13,7 @@ import csv
 file = requests.get('http://www.al.sp.gov.br/repositorioDados/deputados/despesas_gabinetes.xml')
 
 with open('despesas_gabinetes.xml','wb') as f:
-	f.write(file.content)
+    f.write(file.content)
 
 class Handler(ContentHandler):
 
@@ -52,16 +52,8 @@ class Handler(ContentHandler):
 
 
 def gravar_despesas(writer, despesas):
-    cabecalhos = [
-        'Deputado',
-        'Matricula',
-        'Ano',
-        'Mes',
-        'Tipo',
-        'CNPJ',
-        'Fornecedor',
-        'Valor'
-    ]
+    cabecalhos = ['Deputado', 'Matricula', 'Ano', 'Mes',
+                  'Tipo', 'CNPJ', 'Fornecedor', 'Valor']
     writer.writerow(cabecalhos)
 
     for despesa in despesas:
