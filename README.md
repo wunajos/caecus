@@ -1,6 +1,6 @@
 # Caecus
 
-[![Code Health](https://landscape.io/github/rodolfo-viana/caecus/master/landscape.svg?style=flat)](https://landscape.io/github/rodolfo-viana/caecus/master) [![Build Status](https://scrutinizer-ci.com/g/rodolfo-viana/caecus/badges/build.png?b=master)](https://scrutinizer-ci.com/g/rodolfo-viana/caecus/build-status/master) [![Code Climate](https://img.shields.io/codeclimate/maintainability/Nickersoft/dql.svg)](https://codeclimate.com/github/rodolfo-viana/caecus) ![](https://img.shields.io/badge/made%20with-%3C3-red.svg)
+[![Code Health](https://landscape.io/github/rodolfo-viana/caecus/master/landscape.svg?style=flat)](https://landscape.io/github/rodolfo-viana/caecus/master) [![Build Status](https://scrutinizer-ci.com/g/rodolfo-viana/caecus/badges/build.png?b=master)](https://scrutinizer-ci.com/g/rodolfo-viana/caecus/build-status/master) [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/rodolfo-viana/caecus/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/rodolfo-viana/caecus/?branch=master) [![Code Climate](https://img.shields.io/codeclimate/maintainability/Nickersoft/dql.svg)](https://codeclimate.com/github/rodolfo-viana/caecus) ![](https://img.shields.io/badge/made%20with-%3C3-red.svg)
 
 ### O que é?
 Caecus é (ou pretende ser) uma coleção de scripts relacionados aos deputados estaduais de São Paulo: proposições apresentadas, leis aprovadas, presenças em sessões, andamento de comissões, lista de funcionários, gastos, salários e mais.
