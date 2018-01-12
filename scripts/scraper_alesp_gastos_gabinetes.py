@@ -68,7 +68,7 @@ def main():
 
     print('Found {} despesas'.format(len(handler.despesas)))
 
-    with open('despesas.csv', 'w', encoding='latin-1') as f_handle:
+    with open('despesas.csv', 'w', encoding='latin-1', newline='') as f_handle:
         writer = csv.writer(f_handle)
         gravar_despesas(writer, handler.despesas)
 
