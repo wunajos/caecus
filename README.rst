@@ -53,41 +53,37 @@ Como uso os scripts
     Depois da instalação, crie uma pasta de trabalho. No prompt de
     comando, digite:
 
-::
-
-    $ mkdir nomedapastadetrabalho
-    $ cd nomedapastadetrabalho
+    ``$ mkdir nomedapastadetrabalho``
+    
+    ``$ cd nomedapastadetrabalho``
 
     Agora é hora de criar um ambiente de trabalho. Se instalou o Python
     "puro", digite:
 
-::
-
-    $ virtualenv nomedoambientequevocequiser
-    $ activate nomedoambientequevocequiser
-    $ pip install pandas
-    $ pip install requests
+    ``$ virtualenv nomedoambientequevocequiser``
+    
+    ``$ activate nomedoambientequevocequiser``
+    
+    ``$ pip install pandas``
+    
+    ``$ pip install requests``
 
     Se baixou Anaconda, digite:
 
-::
-
-    $ conda create --name nomedoambientequevocequiser python=3
-    $ activate nomedoambientequevocequiser
+    ``$ conda create --name nomedoambientequevocequiser python=3``
+    
+    ``$ activate nomedoambientequevocequiser``
 
     Com o ambiente criado, digite:
 
-::
-
-    $ git clone https://github.com/rodolfo-viana/caecus/
-    $ cd caecus
+    ``$ git clone https://github.com/rodolfo-viana/caecus/``
+    
+    ``$ cd caecus``
 
     Pronto! Os arquivos estão copiados no seu computador. Para usar um
     dos scripts, digite:
 
-::
-
-    $ python nomedoscript.py
+    ``$ python nomedoscript.py``
 
     Não se esqueça: sempre que quiser usar um dos scripts, é preciso
     entrar na pasta ``caecus``, digitar
