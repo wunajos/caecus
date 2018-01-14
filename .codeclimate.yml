@@ -8,3 +8,6 @@ engines:
     checks:
       Similar code:
         enabled: false
+    plugins:
+      pep8:
+        enabled: true
