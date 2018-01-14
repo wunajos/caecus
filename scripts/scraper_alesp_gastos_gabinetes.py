@@ -10,10 +10,10 @@ from xml.sax import ContentHandler, parse
 import requests
 import csv
 
-file = requests.get('http://www.al.sp.gov.br/repositorioDados/deputados/despesas_gabinetes.xml')
+arquivo = requests.get('http://www.al.sp.gov.br/repositorioDados/deputados/despesas_gabinetes.xml')
 
 with open('despesas_gabinetes.xml','wb') as f:
-    f.write(file.content)
+    f.write(arquivo.content)
 
 class Handler(ContentHandler):
 
