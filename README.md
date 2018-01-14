@@ -16,7 +16,7 @@ Os dados apresentados no Caecus são disponibilizados pela Assembleia Legislativ
 Também pretendo incluir dados que não estão no portal, por meio de raspagem do site da Alesp.
 
 ### Como uso os scripts
-Você precisa ter Python 3 no seu computador. O download pode ser feito pelo [site oficial](https://www.python.org/downloads/) ou por uma distribuição, como [Anaconda](https://www.anaconda.com/download/) -- é a que eu uso e recomendo, pois já vem com a maioria das bibliotecas necessárias. Caso opte pelo Python 3 "puro", você terá de baixar as bibliotecas uma a uma. Recomendo que siga as instruções desse vídeo para instalar `pip` e `virtualenv` -- o vídeo traz a versão 2.7 do Python, mas o passo a passo é o mesmo.
+Você precisa ter Python 3 no seu computador. O download pode ser feito pelo [site oficial](https://www.python.org/downloads/) ou por uma distribuição, como [Anaconda](https://www.anaconda.com/download/) -- é a que eu uso e recomendo, pois já vem com a maioria das bibliotecas necessárias. Caso opte pelo Python 3 "puro", você terá de baixar as bibliotecas uma a uma. Recomendo que siga as instruções [desse vídeo](https://www.youtube.com/watch?v=AnIDjAilIzM) para instalar `pip` e `virtualenv` -- o vídeo traz a versão 2.7 do Python, mas o passo a passo é o mesmo para o Python 3.
 
 Depois da instalação, crie uma pasta de trabalho. No prompt de comando, digite:
 ```
