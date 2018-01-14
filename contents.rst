@@ -1,9 +1,6 @@
 Caecus
 ======
 
-|Code Health| |Build Status| |Scrutinizer Code Quality| |Code
-Intelligence Status| |Code Climate| |image5|
-
 O que é
 ~~~~~~~
 
@@ -120,15 +117,3 @@ Tem sugestões ou correções, ou quer colaborar de alguma forma?
     request <https://github.com/rodolfo-viana/caecus/pulls>`__ ou enviar
     um e-mail para rodolfo arroba rodolfoviana ponto com ponto br.
 
-.. |Code Health| image:: https://landscape.io/github/rodolfo-viana/caecus/master/landscape.svg?style=flat
-   :target: https://landscape.io/github/rodolfo-viana/caecus/master
-.. |Build Status| image:: https://scrutinizer-ci.com/g/rodolfo-viana/caecus/badges/build.png?b=master
-   :target: https://scrutinizer-ci.com/g/rodolfo-viana/caecus/build-status/master
-.. |Scrutinizer Code Quality| image:: https://scrutinizer-ci.com/g/rodolfo-viana/caecus/badges/quality-score.png?b=master
-   :target: https://scrutinizer-ci.com/g/rodolfo-viana/caecus/?branch=master
-.. |Code Intelligence Status| image:: https://scrutinizer-ci.com/g/rodolfo-viana/caecus/badges/code-intelligence.svg?b=master
-   :target: https://scrutinizer-ci.com/code-intelligence
-.. |Code Climate| image:: https://img.shields.io/codeclimate/maintainability/Nickersoft/dql.svg
-   :target: https://codeclimate.com/github/rodolfo-viana/caecus
-.. |image5| image:: https://img.shields.io/badge/made%20with-%3C3-red.svg
-   :target: https://rodolfoviana.com.br/
