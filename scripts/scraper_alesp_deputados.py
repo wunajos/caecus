@@ -32,13 +32,13 @@ class Handler(ContentHandler):
             self.current_field = name
             self.deputado[name] = ''
 
-        if name == 'deputado':
+        if name == 'Deputado':
             self.in_deputado = True
 
     def endElement(self, name):
         self.indent -= 1
         print('{}End element: {}'.format('\t' * self.indent, name))
-        if name == 'deputado':
+        if name == 'Deputado':
             self.deputados.append(self.deputado)
             self.deputado = {}
             self.in_deputado = False
