@@ -26,11 +26,19 @@
 # SOFTWARE.
 ###############################################################################
 # Input:
+<<<<<<< HEAD
+#   [optional:] -x XML input file with propositions (default: proposituras.xml)
+#   [optional:] -o CSV file with agreggated data (default: proposituras.csv)
+#   [optional:] -l logfile (default: <empty> - no logfile)
+# Output:
+#   [optional:] -i XML output file with propositions (default: proposituras.xml)
+=======
 #   [optional:] -i XML file with propositions (default: proposituras.xml)
 #   [optional:] -o CSV file with agreggated data (default: proposituras.csv)
 #   [optional:] -l logfile (default: <empty> - no logfile)
 # Output:
 #          $3) file with items general data (default: data.json)
+>>>>>>> 6c1cf7c76453b9be3b45f25d46b0e471fa9cc01d
 ###############################################################################
 ###############################################################################
 # Changelog:
