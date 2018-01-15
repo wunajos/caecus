@@ -74,7 +74,7 @@ def get_zip(fileIn, logger):
     logger.debug("[GZ10] Url a puxar : %s", url)
     arquivoUrl = requests.get(url)
     logger.debug("[GZ20] Salvando conteudo do arquivo.")
-    with open('proposituras.zip', 'w') as compactado:
+    with open('proposituras.zip', 'wb') as compactado:
         compactado.write(arquivoUrl.content)
     logger.debug("[GZ30] Arquivo salvo. descompactando.")
     descompactado = zipfile.ZipFile(io.BytesIO(arquivoUrl.content))
