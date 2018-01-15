@@ -74,13 +74,13 @@ def get_zip(fileIn, logger):
     logger.debug("[GZ10] Url a puxar : %s", url)
     arquivoUrl = requests.get(url)
     logger.debug("[GZ20] Salvando conteudo do arquivo.")
-    with open('proposituras.zip', 'wb') as compactado:
+    with open('proposituras.zip', 'w') as compactado:
         compactado.write(arquivoUrl.content)
     logger.debug("[GZ30] Arquivo salvo. descompactando.")
     descompactado = zipfile.ZipFile(io.BytesIO(arquivoUrl.content))
     xml = descompactado.extractall()
     logger.debug("[GZ40] Descompactado, salvando.")
-    with open(fileIn,'wb') as f:
+    with open(fileIn,'w') as f:
         f.write(xml)
     logger.debug("[GZ50] Arquivo salvo: %s", fileIn)
     
