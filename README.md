@@ -65,5 +65,7 @@ Eu tenho feito testes com algumas bibliotecas, o que significa que a lista muda 
 
 Leia mais sobre Ápio Cláudio na [Wikipédia](https://pt.wikipedia.org/wiki/%C3%81pio_Cl%C3%A1udio_Cego).
 
-### Tem sugestões ou correções, ou quer colaborar de alguma forma?
+### Como colaborar com sugestões ou correções
 Você pode abrir uma [issue](https://github.com/rodolfo-viana/caecus/issues), clonar o repositório e mandar um [pull request](https://github.com/rodolfo-viana/caecus/pulls) ou enviar um e-mail para rodolfo arroba rodolfoviana ponto com ponto br.
+
+Colaboraram no projeto [@jtemporal](https://github.com/jtemporal) e [@Spacial](https://github.com/Spacial). 
