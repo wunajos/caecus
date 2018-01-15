@@ -80,7 +80,7 @@ def get_zip(fileIn, logger):
     descompactado = zipfile.ZipFile(io.BytesIO(arquivoUrl.content))
     xml = descompactado.extractall()
     logger.debug("[GZ40] Descompactado, salvando.")
-    with open(fileIn,'w') as f:
+    with open(fileIn,'wb') as f:
         f.write(xml)
     logger.debug("[GZ50] Arquivo salvo: %s", fileIn)
     
