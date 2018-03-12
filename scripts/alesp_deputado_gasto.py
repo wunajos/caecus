@@ -2,8 +2,8 @@ import xml.etree.ElementTree as ET
 import pandas as pd
 import requests
 
-user_agent_url = 'http://www.al.sp.gov.br/repositorioDados/deputados/despesas_gabinetes.xml'
-xml_data = requests.get(user_agent_url).content
+url = 'http://www.al.sp.gov.br/repositorioDados/deputados/despesas_gabinetes.xml'
+xml_data = requests.get(url).content
 
 class XML2DataFrame:
 
