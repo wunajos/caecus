@@ -1,6 +1,6 @@
 # Caecus
 
-[![Documentation Status](http://readthedocs.org/projects/caecus/badge/?version=latest)](http://caecus.readthedocs.io/en/latest/?badge=latest) [![Code Health](https://landscape.io/github/rodolfo-viana/caecus/master/landscape.svg?style=flat)](https://landscape.io/github/rodolfo-viana/caecus/master) [![Test Coverage](https://api.codeclimate.com/v1/badges/9763052d5a3c6f5c86dd/test_coverage)](https://codeclimate.com/github/rodolfo-viana/caecus/test_coverage) [![Maintainability](https://api.codeclimate.com/v1/badges/9763052d5a3c6f5c86dd/maintainability)](https://codeclimate.com/github/rodolfo-viana/caecus/maintainability) [![](https://img.shields.io/badge/made%20with-%3C3-red.svg)](https://rodolfoviana.com.br/)
+[![Documentation Status](http://readthedocs.org/projects/caecus/badge/?version=latest)](http://caecus.readthedocs.io/en/latest/?badge=latest) [![Code Health](https://landscape.io/github/rodolfo-viana/caecus/master/landscape.svg?style=flat)](https://landscape.io/github/rodolfo-viana/caecus/master) [![Maintainability](https://api.codeclimate.com/v1/badges/9763052d5a3c6f5c86dd/maintainability)](https://codeclimate.com/github/rodolfo-viana/caecus/maintainability) [![](https://img.shields.io/badge/made%20with-%3C3-red.svg)](https://rodolfoviana.com.br/)
 
 ### O que é
 Caecus é (ou pretende ser) uma coleção de scripts para download de dados relacionados aos deputados estaduais de São Paulo: proposições apresentadas, leis aprovadas, presenças em sessões, andamento de comissões, lista de funcionários, gastos, salários e mais.
@@ -8,9 +8,9 @@ Caecus é (ou pretende ser) uma coleção de scripts para download de dados rela
 ### Quais são os scripts
 Há três scripts prontos: 
 
-* `scraper_alesp_deputados.py` (informações sobre os deputados atuais, como nomes, partidos, telefones, biografias, situação etc.; v.1.1), 
-* `scraper_alesp_funcionarios.py` (informações sobre os funcionários da Alesp, como nomes, lotações, quando começaram e quando saíram dos cargos; v.1.0), e 
-* `scraper_alesp_gastos_gabinetes.py` (dados sobre despesas dos deputados reembolsadas pela verba de gabinete, como valores, fornecedores, CNPJ/CPF, categorias de despesas etc.). 
+* `alesp_deputado_gasto.py` (dados sobre despesas reembolsadas pela verba de gabinete, como valores, fornecedores, CNPJ/CPF, tipos de despesas etc.), 
+* `alesp_funcionario_lotacao.py` (informações sobre os funcionários da Alesp, como nomes, histórico de lotações, período nas lotações), e 
+* `alesp_funcionario_cargo.py` (informações sobre os funcionários da Alesp, como nomes, histórico de cargos, regime de contratação, período nos cargos). 
 
 Outros scripts estão em desenvolvimento, e estarão à disposição depois de alguns testes.
 
