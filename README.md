@@ -6,11 +6,14 @@
 Caecus é (ou pretende ser) uma coleção de scripts para download de dados relacionados aos deputados estaduais de São Paulo: proposições apresentadas, leis aprovadas, presenças em sessões, andamento de comissões, lista de funcionários, gastos, salários e mais.
 
 ### Quais são os scripts
-Há três scripts prontos: 
+Há seis scripts prontos: 
 
 * `alesp_deputado_gasto.py` (dados sobre despesas reembolsadas pela verba de gabinete, como valores, fornecedores, CNPJ/CPF, tipos de despesas etc.), 
-* `alesp_funcionario_lotacao.py` (informações sobre os funcionários da Alesp, como nomes, histórico de lotações, período nas lotações), e 
-* `alesp_funcionario_cargo.py` (informações sobre os funcionários da Alesp, como nomes, histórico de cargos, regime de contratação, período nos cargos). 
+* `alesp_funcionario_lotacao.py` (informações sobre os funcionários da Alesp, como nomes, histórico de lotações, período nas lotações), 
+* `alesp_funcionario_cargo.py` (informações sobre os funcionários da Alesp, como nomes, histórico de cargos, regime de contratação, período nos cargos),
+* `alesp_comissao.py` (dados sobre as comissões, como siglas e data de término),
+* `alesp_comissao_membro.py` (informações sobre os parlamentares que são membros das comissões, data de entrada, data de saída, que posição ocupam etc.), e
+* `alesp_comissao_permanente_deliberacao.py` (relação de documentos apresentados nas comissões, se aprovados ou não e outras informações)
 
 Outros scripts estão em desenvolvimento, e estarão à disposição depois de alguns testes.
 
@@ -19,8 +22,8 @@ Os dados apresentados no Caecus são disponibilizados pela Assembleia Legislativ
 
 Também pretendo incluir dados que não estão no portal, por meio de raspagem do site da Alesp.
 
-### Como uso os scripts
-Você precisa ter Python 3 no seu computador. O download pode ser feito pelo [site oficial](https://www.python.org/downloads/) ou por uma distribuição, como [Anaconda](https://www.anaconda.com/download/) -- é a que eu uso e recomendo, pois já vem com a maioria das bibliotecas necessárias. 
+### Como usar os scripts
+Você precisa ter Python 3 no seu computador. O download pode ser feito pelo [site oficial](https://www.python.org/downloads/) ou por uma distribuição, como [Anaconda](https://www.anaconda.com/download/). 
 
 Caso opte pelo Python 3 "puro", você terá de baixar as bibliotecas uma a uma. Recomendo que siga as instruções [desse vídeo](https://www.youtube.com/watch?v=AnIDjAilIzM) para instalar `pip` e `virtualenv` -- o vídeo traz a versão 2.7 do Python, mas o passo a passo é o mesmo para o Python 3.
 
