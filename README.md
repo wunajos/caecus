@@ -1,6 +1,6 @@
 # Caecus
 
-[![Documentation Status](http://readthedocs.org/projects/caecus/badge/?version=latest)](http://caecus.readthedocs.io/en/latest/?badge=latest) [![Code Health](https://landscape.io/github/rodolfo-viana/caecus/master/landscape.svg?style=flat)](https://landscape.io/github/rodolfo-viana/caecus/master) [![Maintainability](https://api.codeclimate.com/v1/badges/9763052d5a3c6f5c86dd/maintainability)](https://codeclimate.com/github/rodolfo-viana/caecus/maintainability) [![](https://img.shields.io/badge/made%20with-%3C3-red.svg)](https://rodolfoviana.com.br/)
+[![Documentation Status](http://readthedocs.org/projects/caecus/badge/?version=latest)](http://caecus.readthedocs.io/en/latest/?badge=latest) [![Code Health](https://landscape.io/github/rodolfo-viana/caecus/master/landscape.svg?style=flat)](https://landscape.io/github/rodolfo-viana/caecus/master) [![](https://img.shields.io/badge/made%20with-%3C3-red.svg)](https://rodolfoviana.com.br/)
 
 ### O que é
 Caecus é (ou pretende ser) uma coleção de scripts para download de dados relacionados aos deputados estaduais de São Paulo: proposições apresentadas, leis aprovadas, presenças em sessões, andamento de comissões, lista de funcionários, gastos, salários e mais.
