@@ -4,24 +4,12 @@ Caecus
 O que é
 ~~~~~~~
 
-    Caecus é (ou pretende ser) uma coleção de scripts para download de
-    dados relacionados aos deputados estaduais de São Paulo: proposições
-    apresentadas, leis aprovadas, presenças em sessões, andamento de
-    comissões, lista de funcionários, gastos, salários e mais.
+    Caecus é (ou pretende ser) uma coleção de scripts para download de dados relacionados aos deputados estaduais de São Paulo: proposições apresentadas, leis aprovadas, presenças em sessões, andamento de comissões, lista de funcionários, gastos, salários e mais.
 
 Quais são os scripts
 ~~~~~~~~~~~~~~~~~~~~
 
-    Há três scripts prontos: ``scraper_alesp_deputados.py`` (informações
-    sobre os deputados atuais, como nomes, partidos, telefones,
-    biografias, situação etc.; v.1.1), ``scraper_alesp_funcionarios.py``
-    (informações sobre os funcionários da Alesp, como nomes, lotações,
-    quando começaram e quando saíram dos cargos; v.1.0) e
-    ``scraper_alesp_gastos_gabinetes.py`` (dados sobre despesas dos
-    deputados reembolsadas pela verba de gabinete, como valores,
-    fornecedores, CNPJ/CPF, categorias de despesas etc.). Outros scripts
-    estão em desenvolvimento, e estarão à disposição depois de alguns
-    testes.
+    Há oito scripts prontos: ``alesp_deputado_gasto.py`` (dados sobre despesas reembolsadas pela verba de gabinete, como valores, fornecedores, CNPJ/CPF, tipos de despesas etc.), ``alesp_funcionario_lotacao.py`` (informações sobre os funcionários da Alesp, como nomes, histórico de lotações, período nas lotações), ``alesp_funcionario_cargo.py`` (informações sobre os funcionários da Alesp, como nomes, histórico de cargos, regime de contratação, período nos cargos), ``alesp_comissao.py`` (dados sobre as comissões, como siglas e data de término), ``alesp_comissao_membro.py`` (informações sobre os parlamentares que são membros das comissões, data de entrada, data de saída, que posição ocupam etc.), ``alesp_comissao_permanente_deliberacao.py`` (relação de documentos apresentados nas comissões, se aprovados ou não e outras informações), ``alesp_comissao_permanente_presenca.py`` (dados sobre a presença de deputados em reuniões das comissões), ``alesp_natureza_doc.py`` (informações sobre a natureza de documentos apresentados na Alesp). Outros scripts estão em desenvolvimento, e estarão à disposição depois de alguns testes.
 
 De onde vêm os dados
 ~~~~~~~~~~~~~~~~~~~~
