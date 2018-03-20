@@ -6,7 +6,7 @@
 Caecus é (ou pretende ser) uma coleção de scripts para download de dados relacionados aos deputados estaduais de São Paulo: proposições apresentadas, leis aprovadas, presenças em sessões, andamento de comissões, lista de funcionários, gastos, salários e mais.
 
 ### Quais são os scripts
-Há seis scripts prontos: 
+Há oito scripts prontos: 
 
 * `alesp_deputado_gasto.py` (dados sobre despesas reembolsadas pela verba de gabinete, como valores, fornecedores, CNPJ/CPF, tipos de despesas etc.), 
 * `alesp_funcionario_lotacao.py` (informações sobre os funcionários da Alesp, como nomes, histórico de lotações, período nas lotações), 
@@ -14,6 +14,8 @@ Há seis scripts prontos:
 * `alesp_comissao.py` (dados sobre as comissões, como siglas e data de término),
 * `alesp_comissao_membro.py` (informações sobre os parlamentares que são membros das comissões, data de entrada, data de saída, que posição ocupam etc.), e
 * `alesp_comissao_permanente_deliberacao.py` (relação de documentos apresentados nas comissões, se aprovados ou não e outras informações)
+* `alesp_comissao_permanente_presenca.py` (dados sobre a presença de deputados em reuniões das comissões)
+* `alesp_natureza_doc.py` (informações sobre a natureza de documentos apresentados na Alesp)
 
 Outros scripts estão em desenvolvimento, e estarão à disposição depois de alguns testes.
 
