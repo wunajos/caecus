@@ -76,9 +76,7 @@ Você pode abrir uma [issue](https://github.com/rodolfo-viana/caecus/issues), cl
 
 Colaboraram no projeto [@jtemporal](https://github.com/jtemporal) e [@Spacial](https://github.com/Spacial). 
 
-### Licença
-
-MIT License
+### Licença MIT
 
 Copyright (c) 2018 Rodolfo Viana
 
